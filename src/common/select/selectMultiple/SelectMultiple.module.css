@@ -1,0 +1,118 @@
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 4px;
+    outline: none;
+}
+
+.value {
+    flex-grow: 1;
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.clear-btn {
+    background: none;
+    color: var(--color-grey);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.25em;
+    transform: translateY(-1px);
+}
+
+.clear-btn:focus,
+.clear-btn:hover {
+    color: var(--color-alarmRed);
+}
+
+.divider {
+    background-color: var(--color-lightGrey);
+    align-self: stretch;
+    width: 1px;
+}
+
+/* .caret {
+    border: 0.25em solid transparent;
+    border-top-color: var(--color-black);
+} */
+
+.options {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    max-height: 13em;
+    overflow-y: auto;
+    border: 1px solid var(--color-inputColor);
+    border-radius: 0.25em;
+    width: 100%;
+    left: 0;
+    top: calc(100% + 6px);
+    background-color: white;
+    z-index: 100;
+}
+
+.options.show {
+    display: block;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .options::-webkit-scrollbar {
+    display: none;
+} */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+/* .options {
+    -ms-overflow-style: none;  IE and Edge
+    scrollbar-width: none; Firefox
+} */
+
+.option {
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+}
+
+.option.selected {
+    background-color: var(--color-lightOrange);
+}
+
+.option.highlighted {
+    background-color: var(--color-orange);
+    color: white
+}
+
+.option-badge {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-inputColor);
+    border-radius: 0.25em;
+    padding: 0.15em 0.25em;
+    gap: 0.25em;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    font-size: 0.85em;
+}
+
+.option-badge:hover,
+.option-badge:focus {
+    background-color: rgba(255,0,0,0.2);
+    border-color: #FF0000;
+}
+
+.option-badge:hover > .remove-btn,
+.option-badge:focus > .remove-btn {
+    color: #FF0000;
+}
+
+.option-badge:hover > .remove-btn {
+    color: #FF0000;
+}

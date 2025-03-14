@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-white: #FFF;
+    --color-whiteSmoke: #F7F7F7;
+    --color-lightGrey: #D9D9D9;
+    --color-grey: #9B9B9B;
+    --color-intenseGrey: #828282;
+    --color-black: #000;
+    --color-hyperLinkBlue: #007BFF;
+    --color-mintGreen: #3EB489;
+    --color-emeraldGreen: #16BE3B;
+    --color-excelGreen: #28A745;
+    --color-pdfRed: #EE3E36;
+    --color-alarmRed: #FF0000;
+    --color-roseRed: #F92672;
+    --color-warningYellow: #FFBC29;
+    --color-backgroundColor1: #F2F2F2;
+    --color-backgroundColor2: #779ECB;
+    --color-nowBrown: #A58057;
+    --color-orange: #3A7d44;
+    --color-lightOrange: #779ECB;
+    --color-inputColor: #7E99A3;
+    --color-inputText: #003092;
+    /* --color-orange: #FF6C37; */
+    /* --color-lightOrange: #FF9670; */
+    
+    
+    /* dark mode color set */
+    --color-inputTextDark: #EFDCAB;
+    --color-fadeBlack: #24272E;
+    --color-intenseFadeBlack: #16181D;
+    --color-smoothWhite: #F6F7F9;
+    --color-alarmYellow: #FFD600;
+
+    --spacing-headerHeight: 54px;
+    --spacing-sidebarHeight: calc(100vh - 54px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    box-sizing: border-box;
+    background-color: var(--color-backgroundColor1);
+}
+
+html.dark body {
+    background-color: var(--color-fadeBlack);
+}
+
+dialog {
+    padding: 0;
+    background: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+dialog::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+dialog {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    opacity: 0;
+    pointer-events: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(72%) sepia(37%) saturate(220%) hue-rotate(0deg) brightness(70%) contrast(97%);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(72%) sepia(37%) saturate(220%) hue-rotate(0deg) brightness(70%) contrast(97%);
+}
+
+/* div {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+} */
+
+.clickable:active {
+    transform: translateY(1px);
+}
+
+@media print {
+    body, html {
+        background: none !important;
+        height: auto !important;
+        margin: 0;
+        padding: 0;
+    }
+    #print-area, #print-area * {
+        visibility: visible;
+    }
+    #print-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 21cm;
+        height: 100%;
+    }
+    .print-page {
+        page-break-after: always; /* Ensures each invoice starts on a new page */
+    }
+}

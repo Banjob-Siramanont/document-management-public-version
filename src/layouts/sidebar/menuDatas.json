@@ -1,0 +1,227 @@
+[
+    {
+        "id": "01",
+        "menu": "ใบเสนอราคา",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "10",
+                "menu": "ใบเสนอราคาทั้งหมด",
+                "path": "/quotation-lists",
+                "relatePath": [
+                    "/quotation-lists/edit"
+                ]
+            },
+            {
+                "id": "11",
+                "menu": "สร้างใบเสนอราคา",
+                "path": "/create-quotation",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "menu": "ใบแจ้งหนี้ / ใบวางบิล",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "110",
+                "menu": "ใบแจ้งหนี้ทั้งหมด",
+                "path": "/pre-invoice-lists",
+                "relatePath": [
+                    "/pre-invoice-lists/edit"
+                ]
+            },
+            {
+                "id": "111",
+                "menu": "สร้างใบแจ้งหนี้",
+                "path": "/create-pre-invoice",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "07",
+        "menu": "ใบเสร็จรับเงิน",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "70",
+                "menu": "ใบเสร็จรับเงินทั้งหมด",
+                "path": "/receipt-lists",
+                "relatePath": [
+                    "/receipt-lists/edit"
+                ]
+            },
+            {
+                "id": "71",
+                "menu": "สร้างใบเสร็จรับเงิน",
+                "path": "/create-receipt",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "02",
+        "menu": "ใบสั่งงาน",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "20",
+                "menu": "ใบสั่งงานทั้งหมด",
+                "path": "/work-order-lists",
+                "relatePath": [
+                    "/work-order-lists/edit",
+                    "/preview-work-order/"
+                ]
+            },
+            {
+                "id": "21",
+                "menu": "สร้างใบสั่งงาน",
+                "path": "/create-work-order",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "03",
+        "menu": "รายการอะไหล่",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "30",
+                "menu": "รายการอะไหล่ทั้งหมด",
+                "path": "/spare-part-lists",
+                "relatePath": [
+                    "/spare-part-lists/edit"
+                ]
+            },
+            {
+                "id": "31",
+                "menu": "เพิ่มรายการอะไหล่",
+                "path": "/add-spare-part",
+                "relatePath": []
+            },
+            {
+                "id": "32",
+                "menu": "เบิกอะไหล่",
+                "path": "/withdraw-spare-part",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "04",
+        "menu": "บริษัทประกันภัย",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "40",
+                "menu": "บริษัทประกันภัยทั้งหมด",
+                "path": "/insurance-company-lists",
+                "relatePath": [
+                    "/insurance-company-lists/edit"
+                ]
+            },
+            {
+                "id": "41",
+                "menu": "เพิ่มบริษัทประกันภัย",
+                "path": "/add-insurance-company",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "05",
+        "menu": "ประวัติรถเข้าเคลม",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "50",
+                "menu": "ประวัติรถเข้าเคลมทั้งหมด",
+                "path": "/claim-history-lists",
+                "relatePath": [
+                    "/claim-history-lists/edit"
+                ]
+            },
+            {
+                "id": "51",
+                "menu": "เพิ่มประวัติรถเข้าเคลม",
+                "path": "/add-claim-history",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "08",
+        "menu": "พนักงาน",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "80",
+                "menu": "พนักงานทั้งหมด",
+                "path": "/employee-lists",
+                "relatePath": [
+                    "/employee-lists/edit"
+                ]
+            },
+            {
+                "id": "81",
+                "menu": "เพิ่มพนักงาน",
+                "path": "/add-employee",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "09",
+        "menu": "ยี่ห้อรถ",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "90",
+                "menu": "ยี่ห้อรถทั้งหมด",
+                "path": "/vehicle-brand-lists",
+                "relatePath": [
+                    "/vehicle-brand-lists/edit"
+                ]
+            },
+            {
+                "id": "91",
+                "menu": "เพิ่มยี่ห้อรถ",
+                "path": "/add-vehicle-brand",
+                "relatePath": []
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "menu": "ข้อมูลบริษัท",
+        "path": "",
+        "relatePath": [],
+        "submenu": [
+            {
+                "id": "100",
+                "menu": "เกี่ยวกับบริษัท",
+                "path": "/about-company",
+                "relatePath": []
+            },
+            {
+                "id": "101",
+                "menu": "แก้ไขข้อมูล",
+                "path": "/edit-company",
+                "relatePath": []
+            }
+        ]
+    }
+]
