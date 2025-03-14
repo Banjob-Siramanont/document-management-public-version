@@ -28,3 +28,5 @@ This is the **frontend implementation** of a document management system. It demo
 git clone https://github.com/Banjob-Siramanont/document-management-public-version.git
 cd document-management-public-version
 
+npm i
+npm run dev
